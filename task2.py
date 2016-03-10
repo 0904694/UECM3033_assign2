@@ -25,11 +25,8 @@ def decomposition(A): # singular value decomposition
     
     
 
-<<<<<<< HEAD
 img=mpimg.imread('Image.jpg')# load img.jpg
-=======
 img=mpimg.imread('Image.jpg')# load img1.jpg
->>>>>>> 57be193675efa6141886cd6dff0a8826e069cdcc
 [r,g,b] = [img[:,:,i] for i in range(3)] #split the coloured image to its rgb channels
 
 
@@ -93,8 +90,5 @@ ax4.imshow(blue_better, cmap = 'Blues')
 plt.show()
 fig.savefig('better_plots.jpg')
 better_im=Image.fromarray(rgb_better,'RGB')
-<<<<<<< HEAD
 better_im.save('rgb_better.jpg') #saving the better resolution image as rgb_better.jpg
-=======
 better_im.save('rgb_better.jpg') #saving the better resolution image as rgb_better.jpg
->>>>>>> 57be193675efa6141886cd6dff0a8826e069cdcc
