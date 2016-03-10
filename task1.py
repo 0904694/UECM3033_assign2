@@ -1,7 +1,11 @@
 import numpy as np
+<<<<<<< HEAD
 ITERATION_LIMIT = 10
 #Your optional code here
 #You can import some modules or create additional functions
+=======
+ITERATION_LIMIT = 100
+>>>>>>> ebc95c2b6b0e3b4ce085624d967c309aa16344e6
 
 def lu(A, b):
     sol = []
@@ -20,9 +24,14 @@ def lu(A, b):
     for k in range(n-2, -1, -1):
         b[k] = (b[k] - np.dot(A[k,k+1:n], b[k+1:n]))/A[k,k]
     return b            
+<<<<<<< HEAD
     
     
+=======
+>>>>>>> ebc95c2b6b0e3b4ce085624d967c309aa16344e6
     return list(sol)
+
+
 
 def sor(A, b):
     sol = []
@@ -33,24 +42,34 @@ def sor(A, b):
         for j in range(len(b)):
             sums = np.dot( A[j,:], x )
             x[j] = x[j] + omega*(b[j]-sums)/A[j,j]
+<<<<<<< HEAD
             
     # Edit here to implement your code
     return list(sol)
 
 def solve(A, b):
     condition = np.count_nonzero(A) > 1/2 *len(A)    # State and implement your condition here
+=======
+    return list(sol)
+
+def solve(A, b):
+    condition = np.count_nonzero(A) > 1/2 *len(A) 
+>>>>>>> ebc95c2b6b0e3b4ce085624d967c309aa16344e6
     if condition:
         print('Solve by lu(A,b)')
         
         return lu(A,b)
     else:
         print('Solve by sor(A,b)') 
+<<<<<<< HEAD
         
+=======
+>>>>>>> ebc95c2b6b0e3b4ce085624d967c309aa16344e6
         return sor(A,b)
 
+
+
 if __name__ == "__main__":
-    ## import checker
-    ## checker.test(lu, sor, solve)
 
     A = np.array([[2,1,6], [8,3,2], [1,5,1]]).astype(float)
     b = np.array([9, 13, 7]).astype(float)
@@ -69,4 +88,8 @@ if __name__ == "__main__":
        
     sol = np.linalg.solve(A,b)
     solve(A,b)
+<<<<<<< HEAD
     print(sol)
+=======
+    print(sol)
+>>>>>>> ebc95c2b6b0e3b4ce085624d967c309aa16344e6
