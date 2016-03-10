@@ -20,6 +20,8 @@ I will check whether the matrix A is positive definite matrix or not by using Co
 
 Explain how you implement your `task1.py` here.
 Using python function of LU factorization and SOR method. The answer for the first system is [ 1. 1. 1.] and it is solved by LU method. The answer for the second system is [ 1. -1. 4. -3.5 7. -1. ], it is solved by LU method also.
+
+
 ---------------------------------------------------------
 
 ## Task 2 -- SVD method and image compression
