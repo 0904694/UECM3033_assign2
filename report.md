@@ -26,6 +26,7 @@ Put here your picture file
 https://github.com/0904694/UECM3033_assign2/blob/master/Image.jpg
 
 How many non zero element in $\Sigma$?
+
 800 nonzero element in sigma for each color
 
 
